@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C97B88322E24E710003656E0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C97B88312E24E710003656E0 /* README.md */; };
+		C97B88342E24E726003656E0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C97B88332E24E720003656E0 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C97B88132E10F3F4003656E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		C97B88052E10F3F3003656E0 /* MindLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97B88122E10F3F4003656E0 /* MindLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97B881C2E10F3F4003656E0 /* MindLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97B88312E24E710003656E0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C97B88332E24E720003656E0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,8 @@
 		C97B87FC2E10F3F3003656E0 = {
 			isa = PBXGroup;
 			children = (
+				C97B88332E24E720003656E0 /* .gitignore */,
+				C97B88312E24E710003656E0 /* README.md */,
 				C97B88072E10F3F3003656E0 /* MindLink */,
 				C97B88152E10F3F4003656E0 /* MindLinkTests */,
 				C97B881F2E10F3F4003656E0 /* MindLinkUITests */,
@@ -212,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97B88322E24E710003656E0 /* README.md in Resources */,
+				C97B88342E24E726003656E0 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

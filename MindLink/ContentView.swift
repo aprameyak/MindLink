@@ -80,6 +80,7 @@ struct JoinGame: View {
     var body: some View {
         Text("This is Join")
             .font(.largeTitle)
+        Text("Enter game code here")
         Button(action: goHome) {
             Text("Go Home")
         }
@@ -87,6 +88,7 @@ struct JoinGame: View {
 }
 struct CreateGame: View {
     @Binding var path: [Page]
+    @State private var username: String = ""
     func goHome() {
         print("Home")
         path = []
@@ -94,6 +96,8 @@ struct CreateGame: View {
     var body: some View {
         Text("This is Create")
             .font(.largeTitle)
+        TextField("Enter your nickname", text: $username)
+        Text("Game code here")
         Button(action: goHome) {
             Text("Go Home")
         }
