@@ -1,35 +1,20 @@
-#  README
+# MindLink
 
-Prompt Phase
+![Swift](https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white&style=for-the-badge)
 
-The app sends a question to all players (e.g., “What’s the worst possible first date idea?” or “If your group were a cult, what would it be called?”)
+## About
 
-Prompts are short, punchy, open-ended, and either absurd or reflective.
+**MindLink** is a fast-paced, real-time party game built in **Swift**. Players respond to creative, punchy prompts, submit anonymous answers, and vote for their favorites in quick rounds to test group intuition and synchronization.
 
-Answer Phase
+## Features
 
-All players type in their answers. (You can cap it to 20–30 seconds)
+- **Prompt Phase**: Send short, open-ended, and often absurd or reflective questions to all players  
+- **Answer Phase**: Players anonymously submit answers within a time limit  
+- **Voting Phase**: Players vote for their favorite answer, except their own  
+- **Reveal + Score**: Winning answers are revealed with player names; points awarded for votes and syncing with others  
+- Optional “vibe streaks” reward consistent syncing  
+- Play multiple rounds until reaching a score cap
 
-Everyone submits anonymously.
+## Technology Stack
 
-Voting Phase
-
-Answers are shuffled and displayed to everyone.
-
-Players vote for their favorite, weirdest, or most “in sync” answer — but can't vote for their own.
-
-Reveal + Score
-
-Winning answer is revealed with the player's name.
-
-Points awarded for:
-
-Votes received
-
-Voting for the most popular response (“MindLink bonus”)
-
-Optional “vibe streaks” if same players keep syncing
-
-Repeat with New Prompt
-
-Play 5–10 rounds per session, or until someone reaches a score cap.
+- **Frontend**: Swift (iOS app)  
