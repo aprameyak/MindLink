@@ -16,5 +16,5 @@ jobs:
           xcodebuild build \
             -project MindLink.xcodeproj \
             -scheme MindLink \
-            -destination "platform=iOS Simulator,name=iPhone 16" \
+            -destination "platform=iOS Simulator,name=iPhone 17" \
             CODE_SIGNING_ALLOWED=NO
