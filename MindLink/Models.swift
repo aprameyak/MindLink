@@ -81,7 +81,7 @@ enum GamePhase: String, CaseIterable, Codable {
     case finished = "finished"
 }
 
-enum PromptCategory: String, CaseIterable {
+enum PromptCategory: String, CaseIterable, Codable {
     case absurd = "absurd"
     case reflective = "reflective"
     case creative = "creative"
