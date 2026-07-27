@@ -28,7 +28,7 @@ class GameManager: ObservableObject {
         
         if game == nil {
             let mockHost = Player(name: "Host")
-            let mockGame = Game(host: mockHost)
+            var mockGame = Game(host: mockHost)
             mockGame.players.append(player)
             self.game = mockGame
         }
