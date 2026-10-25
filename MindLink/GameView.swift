@@ -373,4 +373,3 @@ struct FinishedView: View {
         }
     }
 }
-

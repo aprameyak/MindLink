@@ -34,7 +34,6 @@ class GameManager: ObservableObject {
         }
     }
     
-    
     func startGame() {
         guard var game = game else { return }
         game.phase = .prompt
@@ -77,7 +76,6 @@ class GameManager: ObservableObject {
         guard var game = game,
               let player = currentPlayer else { return }
         
-        // Find the answer and increment votes
         if let index = game.answers.firstIndex(where: { $0.id == answerId }) {
             game.answers[index].votes += 1
         }
@@ -92,7 +90,6 @@ class GameManager: ObservableObject {
         game.answers = game.answers.shuffled()
         self.game = game
         
-        // Calculate scores after a delay
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.calculateScores()
         }
@@ -101,7 +98,6 @@ class GameManager: ObservableObject {
     func calculateScores() {
         guard var game = game else { return }
         
-        // Award points for votes received
         for answer in game.answers {
             if let playerIndex = game.players.firstIndex(where: { $0.id == answer.playerId }) {
                 game.players[playerIndex].score += answer.votes
@@ -136,7 +132,6 @@ class GameManager: ObservableObject {
         self.game = game
     }
     
-    
     private func startAnswerTimer() {
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
@@ -168,7 +163,6 @@ class GameManager: ObservableObject {
             }
         }
     }
-    
     
     func resetGame() {
         timer?.invalidate()

@@ -1,10 +1,3 @@
-//
-//  MindLinkApp.swift
-//  MindLink
-//
-//  Created by Aprameya Kannan on 6/29/25.
-//
-
 import SwiftUI
 
 @main
